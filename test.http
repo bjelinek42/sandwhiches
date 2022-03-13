@@ -15,7 +15,14 @@ content-type: application/json
 }
 
 ###
-GET http://localhost:3000/sandwhiches/3
+Patch http://localhost:3000/sandwhiches/6
+content-type: application/json
+
+{
+  "name": "Roast Beef",
+  "price": 10,
+  "size": "XL"
+}
 
 ###
 GET http://localhost:3000/sandwhiches/3

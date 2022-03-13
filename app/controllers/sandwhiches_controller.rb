@@ -16,4 +16,12 @@ class SandwhichesController < ApplicationController
     sandwhich.save
     render json: sandwhich
   end
+
+  def update
+    sandwhich = Sandwhich.find_by(id: params[:id])
+    sandwhich.name = params[:name]
+    sandwhich.price = params[:price]
+    sandwhich.size = params[:size]
+    sandwhich.save
+  end
 end
