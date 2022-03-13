@@ -5,7 +5,14 @@ GET http://localhost:3000/sandwhiches
 GET http://localhost:3000/sandwhiches/3
 
 ###
-GET http://localhost:3000/sandwhiches/3
+POST http://localhost:3000/sandwhiches
+content-type: application/json
+
+{
+  "name": "turkey",
+  "price": 9,
+  "size": "L"
+}
 
 ###
 GET http://localhost:3000/sandwhiches/3
