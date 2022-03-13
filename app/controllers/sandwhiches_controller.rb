@@ -5,4 +5,10 @@ class SandwhichesController < ApplicationController
     render json: sandwhiches
   end
 
+
+def show
+  sandwhiches = Sandwhich.find_by(id: params[:id])
+  render json: sandwhiches
+end
+
 end
