@@ -3,4 +3,15 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+
+  get "/sandwhiches" => "sandwhiches#index"
+
+  get "/sandwhiches/:id" => "sandwhiches#show"
+
+  post "/sandwhiches" => "sandwhiches#create"
+
+  patch "/sandwhiches" => "sandwhiches#update"
+
+  delete "/sandwhiches" => "sandwhiches#destroy"
 end
