@@ -24,4 +24,9 @@ class SandwhichesController < ApplicationController
     sandwhich.size = params[:size]
     sandwhich.save
   end
+
+  def destroy
+    sandwhich = Sandwhich.find_by(id: params[:id])
+    sandwhich.delete
+  end
 end

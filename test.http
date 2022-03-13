@@ -25,5 +25,5 @@ content-type: application/json
 }
 
 ###
-GET http://localhost:3000/sandwhiches/3
+DELETE http://localhost:3000/sandwhiches/8
 
